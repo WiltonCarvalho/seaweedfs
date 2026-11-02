@@ -30,7 +30,7 @@ docker run -it --rm --name seaweedfs \
     -v ./s3.json:/s3.json \
     -p 8333:8333 -p 8888:8888 -p 12535:12535 \
     --entrypoint=weed chrislusf/seaweedfs \
-    mini -dir=/data -s3 -master.raftHashicorp -s3.config=/s3.json -adminUser=root -adminPassword=root@123
+    mini -dir=/data -s3 -master.raftHashicorp -s3.config=/s3.json -admin.user=root -admin.password=root@123
 ```
 ```
 docker run -it --rm --entrypoint= \
