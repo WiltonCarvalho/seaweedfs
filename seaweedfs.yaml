@@ -2,7 +2,6 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: seaweedfs-s3-config
-  namespace: default
 data:
   s3.json: |
     {
@@ -30,7 +29,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: seaweedfs
-  namespace: default
   labels:
     app: seaweedfs
 spec:
@@ -58,7 +56,6 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: seaweedfs
-  namespace: default
 spec:
   serviceName: "seaweedfs"
   replicas: 1
