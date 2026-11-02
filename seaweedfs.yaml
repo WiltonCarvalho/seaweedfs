@@ -77,8 +77,8 @@ spec:
             - "-s3"
             - "-master.raftHashicorp"
             - "-s3.config=/s3.json"
-            - "-adminUser=root"
-            - "-adminPassword=root@123"
+            - "-admin.user=root"
+            - "-admin.password=root@123"
           ports:
             - containerPort: 8333
               name: s3
